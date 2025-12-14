@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-Now</title>
+    <link rel="stylesheet" href="/Css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>🛍️ ShopNow</h1>
+        </div>
+        <nav>
+            <a href="index.html" style="text-decoration: none; color: black;">
+                <p>Home</p>
+            </a>
+            <p>Products</p>
+            <p>Contact</p>
+        </nav>
+        <div class="header-icons">
+            <i class="fa-regular fa-heart"></i>
+            <div class="cart-count">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>0</span>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Search Product">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="login">
+            <p><a href="#">Login</a> / <a href="#">Register</a></p>
+        </div>
+    </header>
+
+    <div class="product-banner">
+        <h2>Products List</h2>
+    </div>
+
+    <div class="filtering">
+        <button id="filterToggle">Filter ☰</button>
+        <button id="az">Sort By ( A-Z )</button>
+        <button id="za">Sort By ( Z-A )</button>
+    </div>
+
+    <!-- Filter Panel -->
+    <div class="filter-panel" id="filterPanel">
+        <label><input type="checkbox" value="beauty"> Beauty</label>
+        <label><input type="checkbox" value="groceries"> Groceries</label>
+        <label><input type="checkbox" value="furniture"> Furniture</label>
+        <label><input type="checkbox" value="fragrances"> Fragrances</label>
+
+        <hr>
+
+        <h4>Filter by Rating</h4>
+
+        <label>
+            <input type="checkbox" class="rating-filter" value="4">
+            ⭐ 4 & above
+        </label>
+
+        <label>
+            <input type="checkbox" class="rating-filter" value="3">
+            ⭐ 3 & above
+        </label>
+    </div>
+
+    <div class="product-list" id="productList"></div>
+
+    <script src="/Javascript/product.js">
+
+    </script>
+
+</body>
+</html>

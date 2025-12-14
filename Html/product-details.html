@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="/Css/product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>🛍️ ShopNow</h1>
+        </div>
+        <nav>
+            <a href="index.html" style="text-decoration: none; color: black;">
+                <p>Home</p>
+            </a>
+            <a href="products.html" style="text-decoration: none; color: black;">
+                <p>Products</p>
+            </a>
+        </nav>
+        <div class="header-icons">
+            <i class="fa-regular fa-heart"></i>
+            <div class="cart-count">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>0</span>
+            </div>
+        </div>
+        <div class="login">
+            <p><a href="#">Login</a> / <a href="#">Register</a></p>
+        </div>
+    </header>
+
+    <button onclick="goBack()">Back</button>
+    <h2 id="title"></h2>
+
+    <div class="product-container">
+        <div class="product-images">
+            <img id="mainImage" src="">
+            <div class="thumbs" id="thumbs"></div>
+        </div>
+
+        <div class="details">
+            <p class="price" id="price"></p>
+            <p><strong>Discount:</strong> <span id="discount"></span>%</p>
+            <p><strong>Rating:</strong> ⭐ <span id="rating"></span></p>
+            <p><strong>Brand:</strong> <span id="brand"></span></p>
+            <p><strong>Category:</strong> <span id="category"></span></p>
+            <p id="description"></p>
+            <div style="display: flex; gap: 15px;">
+                <button id="addToCart">Add to Cart</button>
+                <button id="buy">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="reviews">
+        <h3>Customer Reviews</h3>
+        <div id="reviewList"></div>
+    </div>
+
+    
+    <script src="/Javascript/product-detail.js"> 
+    </script>
+</body>
+
+</html>

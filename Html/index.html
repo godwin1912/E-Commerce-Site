@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>🛍️ ShopNow</h1>
+        </div>
+        <nav>
+            <p>Home</p>
+            <a href="#pro" style="text-decoration: none;color: black;">
+                <p>Products</p>
+            </a>
+            <p>Contact</p>
+        </nav>
+        <div class="header-icons">
+            <i class="fa-regular fa-heart"></i>
+            <div class="cart-count">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>0</span>
+            </div>
+        </div>
+        <div class="login">
+            <p><a href="#">Login</a> / <a href="#">Register</a></p>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-image">
+            <img src="/images/h1.jpg" alt="Shopping" width="550px" height="550px">
+        </div>
+        <div class="hero-content">
+            <h1>Discover top deals on electronics, fashion, home essentials, groceries, and more.</h1>
+            <button>Shop Now</button>
+            <div class="shipping-info">
+                <p><strong>Free shipping for orders</strong></p>
+                <p>above 300 worth of spend</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <h1 class="products-title" id="pro">Our Products</h1>
+    <p style="display: flex;justify-content: center;">Click any product to see full product list</p>
+    <section class="products-grid">
+        <div class="product-card" data-category="beauty">
+            <img src="/images/Beauty.jpg" alt="Beauty">
+            <p>Beauty</p>
+        </div>
+        <div class="product-card">
+            <img src="/images/lap.jpg" alt="Laptops" data-category="Laptop">
+            <p>Laptops</p>
+        </div>
+        <div class="product-card">
+            <img src="/images/shirt.jpg" alt="Men-Shirts" data-category="men's-shirt">
+            <p>Men's Shirts</p>
+        </div>
+        <div class="product-card">
+            <img src="/images/home.jpg" alt="Home-Decoration" data-category="home-decoration">
+            <p>Home Decoration</p>
+        </div>
+        <div class="product-card">
+            <img src="/images/h3.jpg" alt="Home-Decoration" data-category="tops">
+            <p>Women's Shirts</p>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsetter</h2>
+        <p>Get the latest on sales, new releases, and more.</p>
+        <div class="newsletter2">
+            <input type="email" placeholder="Enter your email address">
+            <button>Subscribe</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5>Links</h5>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Services</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="footer-section">
+                <h5>Information</h5>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Shipping Info</a>
+                <a href="#">Returns</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 ShopNow. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/Javascript/homepage.js"></script>
+</body>
+
+</html>
