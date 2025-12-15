@@ -79,7 +79,7 @@ const myproduct = document.getElementById("productList");
             displayProducts(currentProducts);
         }
 
-        // Restore filters from localstorage
+        // localstorage
         function restoreFilters() {
             const saved = JSON.parse(localStorage.getItem("productFilters"));
 
